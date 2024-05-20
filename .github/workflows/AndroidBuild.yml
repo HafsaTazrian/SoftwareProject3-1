@@ -16,9 +16,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.1.0
       - name: Setup Java JDK
-        uses: actions/setup-java@v3.13.0
+        uses: actions/setup-java@v4.2.1
         with:
-          java-version: '17'
+          java-version: '18'
           distribution: 'adopt'
       # Conditional step for Windows to set execution permission
       - name: Grant execute permission to gradlew

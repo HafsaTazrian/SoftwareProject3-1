@@ -22,7 +22,7 @@ jobs:
           distribution: 'adopt'
       # Conditional step for Windows to set execution permission
       - name: Grant execute permission to gradlew
-        if: runner.os == 'Windows'
+
         run: chmod +x ./gradlew
       - name: Build with Gradle
         run: ./gradlew build
